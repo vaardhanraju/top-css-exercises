@@ -40,3 +40,20 @@ div.text {
   font-size: 22px;
   font-weight: 100;
 }
+
+.para {
+  font-size: 22px;
+}
+
+.small-para{
+  font-size: 14px;
+}
+
+.confirm {
+  background-color: green;
+  color: white;
+}
+
+div.child {
+  font-weight: bold;
+}
