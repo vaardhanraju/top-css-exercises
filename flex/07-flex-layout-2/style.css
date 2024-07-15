@@ -27,3 +27,78 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+
+/* SOLUTION FROM MY SIDE */
+
+/* You will need to change the flex-direction to push the footer down. */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* The header text is size 32px and weight 900. */
+
+/* The header text is vertically centered and 16px from the edge of the screen.  DOUBT */
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 16px;
+  justify-content: center;
+  align-content: center;
+}
+
+/* The footer text is centered horizontally and vertically. */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The sidebar and cards take up all available space above the footer. DOUBT */
+.main {
+  display: flex;
+  flex: 1;
+}
+
+
+/* The sidebar is 300px wide (and it doesn't shrink). and The sidebar has 16px padding. */
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+
+/* The sidebar links are size 24px, are white, and do not have the underline text decoration. */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+/* There is 48px padding around the 'cards' section. and flex-wrap will help get the cards aligned correctly. */
+
+.content {
+  padding: 48px;
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 16px;
+  width: 300px;
+  border-radius: 5px solid;
+}
